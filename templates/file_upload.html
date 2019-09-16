@@ -1,19 +1,32 @@
 <html>
 <head>
     <title>upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/page.css">
 </head>
-<body bgcolor="#b8bdc4">
-<div align="center">
-    <h1>PDF SPLITTER</h1>
+<body>
+<div align="center" class="input">
+    <h1 class="text-monospace font-weight-bold">PDF SPLITTER</h1>
     <hr><br>
+
     <form action = "/success" method = "post" enctype="multipart/form-data">
-        Start Page: <br>
-        <input type ="text" name="start" required><br><br>
-        End Page: <br>
-        <input type=text" name="end" required><br><br>
-        You chose file: <br>
-        <input type="file" name="file" required /><br><br>
-        <input type = "submit" value="Upload">
+        <div class="form-col mb-4">
+        <div class="col">
+            <p class="h6 mb-3">Start Page</p>
+
+            <input type="text"  class="form-rounded" placeholder="  Start Page" name="start" required>
+        </div>
+        <div class="col">
+            <p class="h6 m-3">End Page</p>
+
+            <input type="text"  class="form-rounded" placeholder="  End Page" name="end" required>
+        </div>
+            <div class="m-2">
+                <p class="h6 m-3">Upload File</p>
+                <input type="file" name="file" required /><br><br>
+            </div>
+            <button type="submit" class="btn btn-info m-4" value="Upload">Upload</button>
+    </div>
     </form>
 </div>
 </body>

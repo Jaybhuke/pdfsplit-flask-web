@@ -4,12 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="/static/page.css">
 </head>
 <body bgcolor="#f497e4">
-<form action="/download" method = "get">
-        <p> Successfully extracted!</p>
-        <p>Download your extracted file here!</p>
-        <input type="submit" value="Download">
-</form>
+<!--<form action="/download" method = "get">-->
+        <!--<p> </p>-->
+        <!--<p></p>-->
+        <!--<input type="submit" value="Download">-->
+<!--</form>-->
+
+<div class="row m-5 justify-content-center">
+  <div class="col-md-4">
+    <div class="card round shadow">
+      <h5 class="card-title m-3 text-monospace font-weight-bold">Download</h5>
+      <div class="p-3 m-2 bg-info text-white round font-weight-bold">Successfully extracted!</div>
+      <div class="card-body">
+        <div class="alert alert-primary" role="alert">
+          Download your extracted file here!
+        </div>
+      </div>
+      <div class="row justify-content-center">
+              <form method="get" action="/download">
+        <button type="submit" class="btn btn-info m-2 round1 shadow" value="Download">Download</button>
+
+      </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
 </body>
 </html>

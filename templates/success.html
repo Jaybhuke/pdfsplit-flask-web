@@ -1,15 +1,35 @@
 <html>
 <head>
 <title>success</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/page.css">
 </head>
-<body bgcolor="#aecaf2">
-<p>File uploaded successfully</p>
-<p>File Name: {{name}}</p>
-<p>Do you want to extract pages from {{start}} to {{end}} ?</p>
-<br>
-<form method="get" action="/convert">
-  <input type="submit" value="Extract!">
-</form>
+<body>
+
+
+<div class="row m-5 justify-content-center">
+  <div class="col-md-4">
+    <div class="card round">
+      <h5 class="card-title m-3 text-monospace font-weight-bold">Extract</h5>
+      <div class="p-3 m-2 bg-info text-white round font-weight-bold">File uploaded successfully</div>
+      <div class="card-body">
+        <span class="badge badge-primary m-2">File Name: {{name}}</span>
+        <div class="alert alert-primary" role="alert">
+          Do you want to extract pages from {{start}} to {{end}} ?
+        </div>
+      </div>
+      <div class="row justify-content-center">
+              <form method="get" action="/convert">
+        <button type="submit" class="btn btn-info m-2 round1" value="Extract!">Extract</button>
+
+      </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 </body>
 </html>

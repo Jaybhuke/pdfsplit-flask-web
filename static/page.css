@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+}
+body{
+    background:	linear-gradient(to bottom right,#c94b4b,#4b134f)
+
+}
+
+.form-rounded{
+    border-radius:15px;
+    height:40px;
+    width:300px;
+}
+
+
+.col-centered{
+    float: none;
+margin: 0 auto;
+ }
+
+.round{
+   border-radius:1rem;
+}
+
+.round1{
+   border-radius:10Px;
+}
